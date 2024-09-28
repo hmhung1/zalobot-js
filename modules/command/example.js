@@ -1,7 +1,6 @@
 export default {
   config: {
     name: "example",
-    aliases: ["ex"],
     version: "1.0.0",
     author: "HMHung",
     info: "Example command",
@@ -18,5 +17,5 @@ export default {
   },
   onLoad: async () => {
     // Logic cho hàm ở đây
-  }
+  },
 };

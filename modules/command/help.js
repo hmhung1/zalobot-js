@@ -1,7 +1,6 @@
 export default {
   config: {
     name: "help",
-    aliases: ["h"],
     version: "1.0.0",
     author: "HMHung",
     info: "Hiển thị danh sách các lệnh theo loại",
@@ -14,11 +13,11 @@ export default {
     const categorizedCommands = new Map();
 
     for (const [name, command] of global.commands) {
-      const category = command.config.Category || "Khác"; 
+      const category = command.config.Category || "Khác";
       if (!categorizedCommands.has(category)) {
         categorizedCommands.set(category, []);
       }
-      categorizedCommands.get(category).push(name); 
+      categorizedCommands.get(category).push(name);
     }
 
     const commandList = [];
@@ -26,7 +25,14 @@ export default {
       commandList.push(`${category}: ${commands.join(", ")}`);
     }
 
-    const response = commandList.length > 0 ? commandList.join("\n") : "Hiện không có lệnh nào.";
-    api.sendMessage(`Danh sách lệnh theo loại:\n${response}`, event.threadId, event.type);
-  }
+    const response =
+      commandList.length > 0
+        ? commandList.join("\n")
+        : "Hiện không có lệnh nào.";
+    api.sendMessage(
+      `Danh sách lệnh theo loại:\n${response}`,
+      event.threadId,
+      event.type
+    );
+  },
 };
