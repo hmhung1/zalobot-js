@@ -1,0 +1,11 @@
+{
+  "system": {
+    "PREFIX": "!",
+    "imei": "",
+    "userAgent": ""
+  },
+  "zcaConfig": {
+    "selfListen": true,
+    "checkUpdate": false
+  }
+}
