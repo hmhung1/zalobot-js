@@ -1,7 +1,7 @@
 {
   "name": "zalobot-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test zca",
   "main": "index.js",
   "scripts": {
     "start": "node index",
