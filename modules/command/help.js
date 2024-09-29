@@ -3,7 +3,7 @@ export default {
     name: "help",
     version: "1.0.0",
     author: "HMHung",
-    info: "Hiển thị danh sách các lệnh theo loại",
+    info: "Hiển thị danh sách các lệnh.",
     Category: "General",
     guides: "Sử dụng lệnh này để xem các lệnh có sẵn",
     hasPrefix: true,
@@ -30,7 +30,7 @@ export default {
         ? commandList.join("\n")
         : "Hiện không có lệnh nào.";
     api.sendMessage(
-      `Danh sách lệnh theo loại:\n${response}`,
+      `Danh sách lệnh có thể sử dụng: \n${response}`,
       event.threadId,
       event.type
     );
