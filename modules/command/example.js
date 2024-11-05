@@ -13,9 +13,9 @@ export default {
     api.sendMessage("Đây là lệnh example", event.threadId, event.type);
   },
   onEvent: async ({ api, event }) => {
-    // Logic cho hàm ở đây
+    // làm cái gì ở đây tùy thuộc vào bạn
   },
-  onLoad: async () => {
-    // Logic cho hàm ở đây
+  onLoad: async ({ api, event ) => {
+    // khối code sẽ chạy khi lệnh được tải thành công
   },
 };
